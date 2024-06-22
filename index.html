@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adit Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0e1010f666.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, I'm <span>Adit Yadav</span><br> From India</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="aboutImage" src="adit2.jpeg" alt="Image2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Enthusiastic and highly motivated Software developer with experience in developing web
+                        applications. Proficient in java,spring boot, Html, Css and MySql. Passionate about implementing
+                        technical
+                        skills. Ability to translate business requirement into techincal solutions. </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Developer</span><br> Proficient in Java programming, including core Java,
+                                Spring, and Hibernate. </li>
+                            <li><span>Web Developer</span><br> Experienced in developing dynamic web applications and
+                                creating responsive, visually appealing web pages.</li>
+                            <li><span>Database Management</span><br> Knowledgeable in managing and manipulating
+                                databases efficiently, with expertise in MySQL.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul id="points">
+                            <li><span>Java Backend Developer </span><br>
+                                <ul id="exp-points">
+                                    <li>Develop Java backend systems for a comprehensive sports application.</li>
+                                    <li>Analyze current Requirement and competitor data.</li>
+                                    <li>Enhancing productivity through report creation and implementing additional
+                                        functionalities.</li>
+                                </ul>
+                            </li>
+                            <li><span>Java Internship</span><br>
+                                <ul id="exp-points">
+                                    <li>Developed a RESTful API that allowed the app to integrate with backend services,
+                                        resulting
+                                        in enhanced user experience. </li>
+                                    <li>Worked on SpringBoot, Used Tomcat as Application Server JDBC for DataBase
+                                        Connectivity
+                                        and MySql as DataBase.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Computer Application</span><br> I hold a Master of Computer Applications
+                                (MCA), which further advanced my expertise in software development, specially in Java
+                                and its framework SpringBoot. This postgraduate degree enhanced my technical skills,
+                                analytical abilities, and provided me with extensive practical experience. <br><br>
+                            </li>
+                            <li><span>Bachelor of Computer Application</span><br> I hold a Bachelor of Computer
+                                Application (BCA), which provided me with a strong foundation in programming, database
+                                management, computer networks, and software engineering. This degree equipped me with
+                                essential technical skills and real-world experience, preparing me for diverse roles in
+                                the IT industry.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+     -----------------Projects----------------- 
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="Projects-list">
+                <div>
+                    <h2>Hospital Management System</h2>
+                    <p>Developed a comprehensive Hospital Management System using Java and MySQL Workbench. Implemented
+                        CRUD functionalities for check Docker, booking appointments,
+                        adding patients, and viewing patient lists. Leveraged Java's capabilities and MySQL's database
+                        features to ensure seamless data management and streamline hospital operations.
+
+                    </p>
+                    
+                </div>
+                <div>
+                    <h2>Railway Reservation System</h2>
+                    <p>The Online Reservation System is a Java-based program that manages seat reservations using an
+                        array to track seat availability. It offers functionalities such as viewing the seat map,
+                        reserving seats, canceling reservations, and exiting the program. The program employs a
+                        menu-driven interface with proper input validation to ensure smooth user interaction.</p>
+                    
+                </div>
+                <div>
+                    <h2>Bank Management System</h2>
+                    <p>The ATM Interface for Bank Account Operations is a Java program facilitating account creation,
+                        login authentication, balance checking, deposits, withdrawals, fund transfers, and transaction
+                        history viewing. It incorporates input validation and exception handling for data integrity and
+                        user-friendly interactions, providing a secure platform for managing bank account operations
+                        within a simulated ATM environment.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- ----------------portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="hospital4.jpg" alt="Hospital Image">
+                    <div class="layer">
+                        <h3>Hospital Management System</h3>
+                        <p>Developed a comprehensive Hospital Management System using Java and MySQL Workbench. Implemented
+                        CRUD functionalities for check Docker, booking appointments,
+                        adding patients, and viewing patient lists. Leveraged Java's capabilities and MySQL's database
+                        features to ensure seamless data management and streamline hospital operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bank2.jpg" alt="Bank Image">
+                    <div class="layer">
+                        <h3>Bank Management System</h3>
+                        <p>The ATM Interface for Bank Account Operations is a Java program facilitating account creation,
+                        login authentication, balance checking, deposits, withdrawals, fund transfers, and transaction
+                        history viewing. It incorporates input validation and exception handling for data integrity and
+                        user-friendly interactions, providing a secure platform for managing bank account operations
+                        within a simulated ATM environment.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Railway2.jpg" alt="Railway Image">
+                    <div class="layer">
+                        <h3>Railway Reservation System</h3>
+                        <p>The Online Reservation System is a Java-based program that manages seat reservations using an
+                            array to track seat availability. It offers functionalities such as viewing the seat map,
+                            reserving seats, canceling reservations, and exiting the program. The program employs a
+                            menu-driven interface with proper input validation to ensure smooth user interaction.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:adityadav820@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a> adityadav820@gmail.com</p>
+
+                    <!-- <p><i class="fa-regular fa-envelope"></i>adityadav820@gmail.com</p> -->
+                    <p><i class="fa-solid fa-square-phone-flip"></i>9413280820</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/adit.bittu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adit-yadav" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://wa.me/919413280820" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+                    </div>
+                    <p><a href="./Adit Yadav Resume.pdf" download class="btn btn2 cv">Download Resume</a></p>
+                </div>
+                <div class="contact-right">
+                    <form method="post" action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright © Adit Yadav.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjeGjlZzUJgYI0TvDHKHtWCseKJjUKYccWEMD6xac/dev'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMr-GEkRgHNzs4fGRa1vDPo04baiNNeivjQBZr7z7Pt6cwqtEvLm8q-qgGqDszdn7jXA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
