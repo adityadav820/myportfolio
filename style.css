@@ -8,7 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    /* background: #080808; */
+    background: black;
     color:#fff;
 }
 #header{
@@ -140,6 +141,15 @@ nav ul li a:hover::after{
     font-size: 22px;
     /* font-weight: bold; */
     
+}
+.tab-contents #exp-time{
+    background-color: #b54768;
+    /* width: 100%; */
+    text-align: right;
+}
+#points li{
+    width: 100%;
+    /* background: #ababab; */
 }
 .tab-contents{
     display: none;
