@@ -22,8 +22,12 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Java Developer</p>
-                <h1>Hi, I'm <span>Adit Yadav</span><br> From India</h1>
+                <!-- <p>Java Developer</p>
+                <h1>Hi, I'm <span>Adit Yadav</span><br> From India</h1> -->
+                <p>Hello!</p>
+                <h1>I'm <span class="typing">Adit Yadav</span><br>
+                <h2 class="typing"> An Experienced Software Engineer.</h2></h1> 
+
             </div>
         </div>
 
@@ -138,43 +142,6 @@
             </div>
         </div>
     </div>
-<!--
-     -----------------Projects----------------- 
-    <div id="Projects">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="Projects-list">
-                <div>
-                    <h2>Hospital Management System</h2>
-                    <p>Developed a comprehensive Hospital Management System using Java and MySQL Workbench. Implemented
-                        CRUD functionalities for check Docker, booking appointments,
-                        adding patients, and viewing patient lists. Leveraged Java's capabilities and MySQL's database
-                        features to ensure seamless data management and streamline hospital operations.
-
-                    </p>
-                    
-                </div>
-                <div>
-                    <h2>Railway Reservation System</h2>
-                    <p>The Online Reservation System is a Java-based program that manages seat reservations using an
-                        array to track seat availability. It offers functionalities such as viewing the seat map,
-                        reserving seats, canceling reservations, and exiting the program. The program employs a
-                        menu-driven interface with proper input validation to ensure smooth user interaction.</p>
-                    
-                </div>
-                <div>
-                    <h2>Bank Management System</h2>
-                    <p>The ATM Interface for Bank Account Operations is a Java program facilitating account creation,
-                        login authentication, balance checking, deposits, withdrawals, fund transfers, and transaction
-                        history viewing. It incorporates input validation and exception handling for data integrity and
-                        user-friendly interactions, providing a secure platform for managing bank account operations
-                        within a simulated ATM environment.</p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
--->
     <!-- ----------------portfolio------------------- -->
     <div id="portfolio">
         <div class="container">
@@ -247,6 +214,32 @@
             <p> copyright © Adit Yadav.</p>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const typingElements = document.querySelectorAll(".typing");
+            typingElements.forEach((element, index) => {
+                const text = element.textContent;
+                element.textContent = "";
+                setTimeout(() => {
+                    let i = 0;
+                    const interval = setInterval(() => {
+                        if (i < text.length) {
+                            element.textContent += text.charAt(i);
+                            i++;
+                        } else {
+                            clearInterval(interval);
+                            if (index === typingElements.length - 1) {
+                                // Navigate to the About section after typing animation completes
+                                setTimeout(() => {
+                                    window.location.href = "#about";
+                                }, 2500); // 3 seconds delay
+                            }
+                        }
+                    }, 50);
+                }, index * 700);
+            });
+        });
+    </script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
